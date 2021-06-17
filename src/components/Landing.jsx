@@ -66,11 +66,13 @@ const Landing = () => {
 
     return (
         <>
+            <div className="landing__page">
 
-            <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css" />
-            <div className="landing-container">
-                <h3 className="sunrise-font" id="typedtext" dangerouslySetInnerHTML={{ __html: typeWriterState.content }}></h3>
-                {buttonState.showButton === true ? <button className="btn btn-discover" type="button" onClick={() => handleClick()}>Discover More</button> : ''}
+                <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css" />
+                <div className="landing-container">
+                    <h3 className="sunrise-font" id="typedtext" dangerouslySetInnerHTML={{ __html: typeWriterState.content }}></h3>
+                    {buttonState.showButton === true ? <button className="btn btn-discover" type="button" onClick={() => handleClick()}>Discover More</button> : ''}
+                </div>
             </div>
         </>
     )

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Portfolio from './Portfolio';
 import Contact from './Contact';
