@@ -2,21 +2,22 @@ import React from "react"
 
 const SocialShare = [
     {
-        iconName: "facebook",
-        link: "https://www.facebook.com/",
-    },
-    {
         iconName: "github",
-        link: "https://github.com/"
-    },
-    {
-        iconName: "instagram",
-        link: "https://www.instagram.com/",
+        link: "https://github.com/jushita"
     },
     {
         iconName: "linkedIn",
-        link: "https://linkedin.com/"
+        link: "https://www.linkedin.com/in/jushita/"
     },
+    {
+        iconName: "facebook",
+        link: "https://www.facebook.com/jushita/",
+    },
+    {
+        iconName: "instagram",
+        link: "https://www.instagram.com/jushitaa/",
+    },
+
 ];
 
 const Social = () => {

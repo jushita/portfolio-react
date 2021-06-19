@@ -16,6 +16,33 @@
   position: relative;
   clear: both;
 }
+
+
+/* page animation */
+.about__container,
+.resume__container,
+.blog__container
+{
+  -webkit-animation: 800ms ease-in-out 0s normal none 1 running customOne;
+  animation: 800ms ease-in-out 0s normal none 1 running customOne;
+}
+
+@keyframes customOne {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.customOne {
+  animation-name: customOne;
+}
+
+
 /* Right part in the site */
 .main__section {
   position: fixed;
@@ -37,6 +64,11 @@
   flex-direction: column;
   align-items: center;
   padding-top: 15rem;
+}
+
+.social_container {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .sunrise-font {
@@ -232,7 +264,7 @@ img {
 
 }
 .about__container {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .about__image {
@@ -246,7 +278,7 @@ img {
   padding-top: 2rem;
 }
 
-.name {
+.headline {
   font-size: 22px;
   letter-spacing: 2px;
   padding-left: 3px;
@@ -261,6 +293,11 @@ img {
 
 .description {
   padding-top: 2rem;
+}
+
+.desc {
+  letter-spacing: .5px;
+  line-height: 24px;
 }
 
 .right {
@@ -291,6 +328,19 @@ img {
 }
 .abt_tm_modalbox_about {
   width: 45rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.close-modal {
+  align-self: flex-end;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding-bottom: 20px;
+   
 }
 .abt_progress {
   width: 100%;
@@ -373,4 +423,172 @@ body.modal {
 
 .ReactModal__Content .ReactModal__Content--after-open {
   transform: translate(-25%, -50%) !important;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+
+
+.resume__container {
+  padding-top: 2rem;
+}
+
+.download-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.download-button {
+  padding-right: 22rem;
+  cursor: pointer;
+}
+
+.resume__page--header {
+  padding-left: 1px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  transition: all 0.3s ease;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+}
+
+
+/* CONTACT */
+.contact__container {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 100px 0px 100px 0px;
+}
+.map_wrap {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: 50px;
+
+}
+.contact__container .map_wrap .map > div {
+  height: 400px !important;
+  width: 100% !important;
+}
+.contact__container .map_wrap .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact_form {
+  border-radius: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  min-height: 70px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.cards {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+}
+
+.article-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.contact_btn {
+  margin-top: 25px;
+}
+
+
+
+/* BLOG */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 35px;
+}
+
+.cards {
+  max-width: 960px;
+  margin: 0 auto 10px;
+  padding-top: 1rem;
+  
+}
+
+.card {
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+
+article {
+  position: relative;
+}
+
+.article-img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.blog__container {
+  padding-top: 2rem;
 }

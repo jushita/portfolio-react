@@ -1,8 +1,8 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Portfolio from './Portfolio';
 import Contact from './Contact';
 import About from './About';
 import Blog from './Blog';
+import Resume from './Resume'
 
 
 
@@ -18,16 +18,13 @@ const Home = () => {
                             <div className="menu">
                                 <ul>
                                     <Tab>
-                                        <span className="menu__content">Home</span>
-                                    </Tab>
-                                    <Tab>
                                         <span className="menu__content">About</span>
                                     </Tab>
                                     <Tab>
-                                        <span className="menu__content">Portfolio</span>
+                                        <span className="menu__content">Resume</span>
                                     </Tab>
                                     <Tab>
-                                        <span className="menu__content">Blog</span>
+                                        <span className="menu__content">Photo Blog</span>
                                     </Tab>
                                     <Tab>
                                         <span className="menu__content">Contact</span>
@@ -52,10 +49,7 @@ const Home = () => {
                                     <About />
                                 </TabPanel>
                                 <TabPanel>
-                                    <About />
-                                </TabPanel>
-                                <TabPanel>
-                                    <Portfolio />
+                                    <Resume />
                                 </TabPanel>
                                 <TabPanel>
                                     <Blog />
