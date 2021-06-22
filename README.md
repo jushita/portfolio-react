@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created with REACT using Component architecture.
+1. There are 7 major copmponents
+2. Landing component is followed by the Home component which handles the routing
+3. All the styles is included in the index.css file
+4
 
 ## Available Scripts
 
