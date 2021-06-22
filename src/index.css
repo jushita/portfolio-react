@@ -17,12 +17,11 @@
   clear: both;
 }
 
-
 /* page animation */
 .about__container,
 .resume__container,
-.blog__container
-{
+.blog__container,
+.contact__container {
   -webkit-animation: 800ms ease-in-out 0s normal none 1 running customOne;
   animation: 800ms ease-in-out 0s normal none 1 running customOne;
 }
@@ -41,7 +40,6 @@
 .customOne {
   animation-name: customOne;
 }
-
 
 /* Right part in the site */
 .main__section {

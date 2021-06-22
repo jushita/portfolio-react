@@ -68,14 +68,11 @@ const About = () => {
                         <div className="box-inner">
                             <div className="description_wrap scrollable">
                                 <div className="my_box">
-
-
                                     <div className="left">
                                         <div className="about_title">
                                             <h3 className="headline">Web Development</h3>
                                         </div>
                                         {/* END ABOUT TITLE */}
-
                                         <div className="abt_progress">
                                             <div className="progress_inner" data-value="95">
                                                 <span>
@@ -88,7 +85,6 @@ const About = () => {
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div className="progress_inner" data-value="95">
                                                 <span>
                                                     <span className="label">Angular</span>
@@ -100,7 +96,6 @@ const About = () => {
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div className="progress_inner" data-value="80">
                                                 <span>
                                                     <span className="label">React</span>
@@ -112,7 +107,6 @@ const About = () => {
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div className="progress_inner" data-value="80">
                                                 <span>
                                                     <span className="label">Java</span>
@@ -124,9 +118,6 @@ const About = () => {
                                                     </div>
                                                 </div>
                                             </div>
-
-
-
                                             <div className="progress_inner" data-value="80">
                                                 <span>
                                                     <span className="label">Python</span>
@@ -138,7 +129,6 @@ const About = () => {
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div className="progress_inner" data-value="85">
                                                 <span>
                                                     <span className="label">MySQL | Cassandra | MongoDB</span>
@@ -150,7 +140,6 @@ const About = () => {
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                         {/* END PROGRESS */}
                                     </div>
