@@ -1,9 +1,9 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Contact from './Contact';
 import About from './About';
 import Blog from './Blog';
 import Resume from './Resume'
 import Navbar from "./Navbar";
+import Illustrations from "./Illustrations"
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -11,6 +11,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const Home = () => {
 
     const size = useWindowSize();
+    const [pathname] = useState(window.location.pathname); 
+
 
     function useWindowSize() {
         // Initialize state with undefined width/height so server and client renders match
@@ -41,6 +43,7 @@ const Home = () => {
       
         return windowSize;
       }
+      
 
     if(size.width > 768) {
         return (
@@ -53,7 +56,7 @@ const Home = () => {
                                 <div className="menu">
                                     <ul>
                                         <Tab>
-                                            <span className="menu__content">About</span>
+                                            <span className="menu__content" >About</span>
                                         </Tab>
                                         <Tab>
                                             <span className="menu__content">Resume</span>
@@ -62,7 +65,7 @@ const Home = () => {
                                             <span className="menu__content">Photo Blog</span>
                                         </Tab>
                                         <Tab>
-                                            <span className="menu__content">Contact</span>
+                                            <span className="menu__content">Illustrations</span>
                                         </Tab>
     
                                     </ul>
@@ -90,7 +93,7 @@ const Home = () => {
                                         <Blog />
                                     </TabPanel>
                                     <TabPanel>
-                                        <Contact />
+                                        <Illustrations />
                                     </TabPanel>
                                 </div>
                             </div>
@@ -104,13 +107,13 @@ const Home = () => {
         
         return(
             <>
-                 <Router>
+                <Router>
                 <Navbar />
                 <Switch>
-                    <Route path='/' exact component={About} />
+                    <Route path='/'  exact component={About} />
                     <Route path='/resume' component={Resume} />
                     <Route path='/photo-blog' component={Blog} />
-                    <Route path='/contact' component={Contact} />
+                    <Route path='/illustrations' component={Illustrations} />
                 </Switch>
                 </Router>
             </>

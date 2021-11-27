@@ -8,6 +8,7 @@ init("user_epyKn6pR6sJEyDRUtPZVP");
 // go to https://dashboard.emailjs.com/admin
 // to change template or make edits
 const Contact = () => {
+    let success;
     const [viewport, setViewport] = useState({
         latitude: 32.7767,
         longitude: -96.7970,
@@ -30,18 +31,27 @@ const Contact = () => {
         )
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
+                success = true;
+                clearForm();
             })
             .catch((err) => {
                 console.log('FAILED...', err);
+                success = false;
+                clearForm();
             });
     };
+    const clearForm = () => {
+        toSend.from_name = '';
+        toSend.to_name = '';
+        toSend.message = '';
+        toSend.reply_to = '';
+    }
 
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
 
     return (
-
         <div className="contact__container">
             <div className="tokyo_tm_title">
                 <div className="title_flex">
@@ -87,6 +97,7 @@ const Contact = () => {
                         onChange={handleChange}
                     />
                     <button className="btn contact_btn" type='submit'>Submit</button>
+                    <div>{success}</div>
                 </form>
             </div>
 

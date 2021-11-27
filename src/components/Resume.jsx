@@ -8,15 +8,16 @@ const Resume = () => {
                 <div className="top-container">
                     <div className="download-container">
                         <div className="headline">
-                            Resume
-                        </div>
-                        <a className="download-button" href='/assets/jrahman_resume.pdf' download>
+                            Resume &nbsp; 
+                            <a className="download-button" href='/assets/jrahman_resume.pdf' download>
                             <img className="svg" src="/assets/download.svg"></img>
                         </a>
+                        </div>
+                        
                     </div>
                 </div>
                 <div>
-                    <img src="/assets/resume.jpg"></img>
+                    <img className="resume" src="/assets/resume.jpg"></img>
                 </div>
 
             </div>
