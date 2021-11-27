@@ -18,9 +18,10 @@
 }
 
 .navigation-body {
-  padding: 50px;
+  padding: 25px;
   background-color: white;
 }
+
 
 /* page animation */
 .about__container,
@@ -468,7 +469,6 @@ body.modal {
 }
 
 .download-button {
-  padding-right: 22rem;
   cursor: pointer;
 }
 

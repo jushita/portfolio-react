@@ -3,7 +3,7 @@ import About from './About';
 import Blog from './Blog';
 import Resume from './Resume'
 import Navbar from "./Navbar";
-import Illustrations from "./Illustrations"
+import Skills from "./Skills"
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -65,7 +65,7 @@ const Home = () => {
                                             <span className="menu__content">Photo Blog</span>
                                         </Tab>
                                         <Tab>
-                                            <span className="menu__content">Illustrations</span>
+                                            <span className="menu__content">Skills</span>
                                         </Tab>
     
                                     </ul>
@@ -93,7 +93,7 @@ const Home = () => {
                                         <Blog />
                                     </TabPanel>
                                     <TabPanel>
-                                        <Illustrations />
+                                        <Skills />
                                     </TabPanel>
                                 </div>
                             </div>
@@ -109,11 +109,14 @@ const Home = () => {
             <>
                 <Router>
                 <Navbar />
+
                 <Switch>
-                    <Route path='/'  exact component={About} />
-                    <Route path='/resume' component={Resume} />
-                    <Route path='/photo-blog' component={Blog} />
-                    <Route path='/illustrations' component={Illustrations} />
+                    <Route path='/home/about' component={About} />
+                    <Route path='/home/resume' component={Resume} />
+                    <Route path='/home/photo-blog' component={Blog} />
+                    <Route path='/home/illustrations' component={Skills} />
+                    <Route path='/home' component={About} />
+
                 </Switch>
                 </Router>
             </>
